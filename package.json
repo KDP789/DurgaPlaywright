@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "regression" : "npx playwright test",
-    "webTests" : "npx playwright test --grep=@web",
-    "APITests" : "npx playwright test --grep=@API"
+    "regression": "npx playwright test",
+    "webTests": "npx playwright test --grep=@web",
+    "APITests": "npx playwright test --grep=@API"
   },
   "keywords": [],
   "author": "",

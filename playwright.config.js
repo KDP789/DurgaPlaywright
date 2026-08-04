@@ -5,7 +5,7 @@ import { trace } from "node:console";
 const config = ({
 
   testDir :'./tests',
-  retries : 2,
+  retries : 1,
   
 
   timeout: 30*1000,
@@ -20,8 +20,8 @@ const config = ({
 
     browserName: 'chromium',
     headless : false,
-    screenshot : 'on', //'on',
-    trace : 'on'//  'retain-on-failure'
+    screenshot : 'off', //'on',
+    trace :  'retain-on-failure' // 'on'// 
 
   },
 
