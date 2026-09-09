@@ -6,6 +6,7 @@ const orderPayload = {orders:[{country:"Cuba",productOrderedId:"6960eac0c941646b
 const fakePayLoadOrders = { data: [], message: "No Orders" };
  
 let response;
+
 test.beforeAll(async () => {
   const apiContext = await request.newContext();
   const apiUtils = new APiUtils(apiContext, loginPayload);
@@ -15,7 +16,7 @@ test.beforeAll(async () => {
  
  
 //create order is success
-test('@SP Place the order', async ({ page }) => {
+test('@PO Place the order', async ({ page }) => {
   page.addInitScript(value => {
  
     window.localStorage.setItem('token', value);

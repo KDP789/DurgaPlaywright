@@ -5,7 +5,7 @@ import { trace } from "node:console";
 const config = ({
 
   testDir :'./tests',
-  retries : 1,
+  //retries : 1,
   
 
   timeout: 30*1000,

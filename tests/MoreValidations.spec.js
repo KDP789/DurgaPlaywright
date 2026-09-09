@@ -33,6 +33,7 @@ await page.goForward();
 await expect(page.locator("#displayed-text")).toBeVisible();
 await page.screenshot({path : 'screenshot.png'})
 await page.locator("#displayed-text").screenshot({path: "partialScreenshot.jpg"});
+await page.locator(".btn-style").nth(2).screenshot({path: "partialScreenshot2.jpg"});
 await page.locator("#hide-textbox").click();
 await expect(page.locator("#displayed-text")).toBeHidden();
 
