@@ -36,6 +36,7 @@ await page.locator("#displayed-text").screenshot({path: "partialScreenshot.jpg"}
 await page.locator(".btn-style").nth(2).screenshot({path: "partialScreenshot2.jpg"});
 await page.locator("#hide-textbox").click();
 await expect(page.locator("#displayed-text")).toBeHidden();
+await expect(page.locator("#displayed-text")).toBeHidden();
 
 })
 
